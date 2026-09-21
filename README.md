@@ -6,7 +6,7 @@ The review is generated for the text you submit. Resumes are not saved.
 
 ## Live Demo
 
-**Live Demo:** not deployed yet. Replace this line with the hosted URL when one exists.
+[Live Demo](https://ai-resume-reviewer-livid.vercel.app)
 
 ## Features
 
@@ -72,7 +72,7 @@ lib/resume-file.ts           Size and file-type limits
 Clone the repository and install dependencies:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/nankam12/ai-resume-reviewer.git
 cd ai-resume-reviewer
 npm install
 ```
@@ -113,16 +113,13 @@ Next.js loads `.env.local` for the server. The name is not prefixed with `NEXT_P
 
 ## Deployment
 
-This repository does not include a deployment config, CI workflow, or live URL.
+The app is deployed on [Vercel](https://vercel.com) from the GitHub repository [nankam12/ai-resume-reviewer](https://github.com/nankam12/ai-resume-reviewer).
 
-To host it, use a Node.js environment that can run Next.js 16 and set `GEMINI_API_KEY` in the host’s environment variables. Do not expose that variable to the browser. Then build and start the app:
+Production URL: [https://ai-resume-reviewer-livid.vercel.app](https://ai-resume-reviewer-livid.vercel.app)
 
-```bash
-npm run build
-npm start
-```
+Vercel builds the Next.js app from the connected repository. `GEMINI_API_KEY` must be set in the Vercel project’s environment variables so the analyze route can call Gemini. It should not be exposed to the browser.
 
-The analyze route allows up to 60 seconds, and PDF extraction allows up to 30 seconds (`maxDuration` on those route handlers). A host with a shorter function timeout may need that limit raised.
+The analyze route allows up to 60 seconds, and PDF extraction allows up to 30 seconds (`maxDuration` on those route handlers). A Vercel plan with a shorter function timeout can cut those requests off early.
 
 ## Screenshots
 
@@ -140,7 +137,6 @@ These are ideas, not current features:
 - Support for DOCX uploads.
 - Saved reviews for returning to an earlier comparison.
 - Automated tests for validation, PDF extraction, and the review parser.
-- A deployed demo with the live URL filled in above.
 
 ## What I Learned
 
