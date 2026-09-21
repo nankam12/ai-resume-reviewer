@@ -123,11 +123,23 @@ The analyze route allows up to 60 seconds, and PDF extraction allows up to 30 se
 
 ## Screenshots
 
-Add images here after capturing the running app. Suggested files:
+### Home & Analyzer
 
-1. Home and analyzer — `docs/screenshots/home.png`
-2. PDF selected and text extracted — `docs/screenshots/pdf-upload.png`
-3. Completed review — `docs/screenshots/review.png`
+The landing page and the form for pasting a resume and a job description.
+
+![ResumeLens Home](docs/screenshots/home.png)
+
+### PDF Upload & Text Extraction
+
+A selected PDF, with the extracted text placed in the resume box.
+
+![ResumeLens PDF Upload](docs/screenshots/pdf-upload.png)
+
+### Completed Review
+
+The structured review: match score, skills, keywords, bullet feedback, and recommendations.
+
+![ResumeLens Analysis Results](docs/screenshots/review.png)
 
 ## Future Improvements
 
